@@ -15,7 +15,7 @@ const Users = () => {
       users.map(({ id, username }) => {
         return <h2 key={id} className='text-4xl border-2 border-[#ddd] m-10 p-10
           relative'>
-          <Link to={"/users/" + id} className=' absolute inset-0' target='_blank'></Link>
+          <Link to={"/users/" + id} className=' absolute' target='_blank'></Link>
           {username}
         </h2>
       })
